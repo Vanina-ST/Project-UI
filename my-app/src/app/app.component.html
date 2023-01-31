@@ -1,0 +1,123 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+</head>
+
+
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg " style="position: inherit;">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img
+          src="https://www.bkwine.com/wp-content/uploads/2011/08/france-bon-appetit-logo.jpg" /></a>
+    
+
+        
+        
+        
+      
+     
+
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="dropdown">
+          <button class="dropbtn">Parisian Living</button>
+          <div class="dropdown-content">
+            <a style="white-space: no-wrap; font-size:10px;" href="#">Everything Paris. From tried and true to hip and
+              new. HiP Paris has you covered in the City of Light.
+
+            </a>
+            <img style="width: 150%; ;"
+              src="https://www.monpetitfour.com/wp-content/uploads/2019/01/French-lifestyle-tips.jpg" />
+            <img style="width: 150%; ;"
+              src="https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-1920x1080.jpg"
+              class="attachment-hero size-hero" alt="Cost of living in France" decoding="async"
+              srcset="https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-1024x683.jpg 1024w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-300x200.jpg 300w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-768x512.jpg 768w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-1536x1024.jpg 1536w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-600x400.jpg 600w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-100x67.jpg 100w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france.jpg 1800w,https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-1920x1080.jpg 1920w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-30x17.jpg 30w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-700x394.jpg 700w, https://www.expatica.com/app/uploads/sites/5/2017/05/cost-of-living-in-france-1200x675.jpg 1200w" />
+
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Food & Drink</button>
+          <div class="dropdown-content">
+            <a style="white-space: no-wrap; font-size:10px;" href="#">All the best in tried and true or new, hip, and
+              happening. The best restaurants, shops, beer, wine, and everything food and dining in Paris and beyond.</a>
+            <img
+              srcset="https://cdn.theforkmanager.com/static/styles/blog_article_header_image/public/wp-blog/el-tenedor-atraer-clientes-bebidas-de-verano-refrescantes-2018-restaurante-8.jpg?itok=lg72pDPE 1x"
+              src="https://cdn.theforkmanager.com/static/styles/blog_article_header_image/public/wp-blog/el-tenedor-atraer-clientes-bebidas-de-verano-refrescantes-2018-restaurante-8.jpg?itok=lg72pDPE"
+              alt="ElTenedor bebidas de verano para atraer clientes en agosto 2018 al restaurante">
+
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Travel</button>
+          <div class="dropdown-content">
+            <a style="white-space: no-wrap; font-size:10px;" href="#">Looking to discover new spots outside of Paris? Seek no further.</a>
+            <img alt="where to travel in 2022" title="where to travel in 2022" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/where-to-travel-in-2022-1640200544.jpg?crop=0.502xw:1.00xh;0.250xw,0&amp;resize=640:*">
+         
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Contact</button>
+          <div class="dropdown-content">
+            <img style="width: 287%;
+            height: 38%;" src="https://cdn.pixabay.com/photo/2016/12/15/12/26/contact-us-1908763__340.png" class="photo-result-image" srcset="https://cdn.pixabay.com/photo/2016/12/15/12/26/contact-us-1908763__340.png 1x, https://cdn.pixabay.com/photo/2016/12/15/12/26/contact-us-1908763__480.png 2x" alt="Contact Us, Contact, Business">
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">About</button>
+          <div class="dropdown-content">
+            
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Marketplace</button>
+          <div class="dropdown-content" >
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id = "btnSubmit" type="submit"class="navbar-toggler"  data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()" >
+    <i class="fas fa-bars"></i>
+   
+  </button>
+  <div class="menu"[ngClass]="{'active': isOpen}" *ngIf="isOpen" >
+    <div class="dropdown">
+      <button class="dropbtn">Parisian Living</button>
+      <button class="dropbtn">Food & Drink</button>
+      <button class="dropbtn">Travel</button>
+      <button class="dropbtn">Contact</button>
+      <button class="dropbtn">About</button>
+      <button class="dropbtn">Marketplace</button>
+      
+    </div>
+  
+    </div>
+
+   
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <img class="background-img"
+    src="https://hipparis.s3.amazonaws.com/wp-content/uploads/2022/11/HiP-Paris-Blog-French-Food-Habits-%40cat_in_france-kitchen-_-%40cat_in_france-confit.jpg" />
+  <img class="background-img" src="https://www.monpetitfour.com/wp-content/uploads/2019/01/French-lifestyle-tips.jpg" />
+  <img class="background-img"
+    src="https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?resize=696%2C464&amp;ssl=1"
+    srcset="https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?w=3456&amp;ssl=1 3456w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?resize=696%2C464&amp;ssl=1 696w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?resize=1068%2C712&amp;ssl=1 1068w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?resize=630%2C420&amp;ssl=1 630w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?w=1392&amp;ssl=1 1392w, https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2016/09/iStock-119483507.jpg?w=2088&amp;ssl=1 2088w"
+    sizes="(max-width: 696px) 100vw, 696px" alt="" title="French ratatouille">
+   
+   
+  
+    
+      
+    
